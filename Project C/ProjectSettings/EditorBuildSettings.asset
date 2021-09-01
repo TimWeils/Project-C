@@ -42,6 +42,21 @@ EditorBuildSettings:
     path: 
     guid: 68339a220262ac44392497f21bdf49ce
   - enabled: 1
-    path: Assets/NewScene.unity
+    path: 
     guid: 2f940f82585e18b42b0512a994a12502
+  - enabled: 1
+    path: Assets/Scenes/Farm.unity
+    guid: 61ef8a119eb0f5e4ca9b6e7c297a2ce1
+  - enabled: 1
+    path: Assets/Scenes/Orchard.unity
+    guid: 3dc96be63ebc2184899f2dc1c2b2ea91
+  - enabled: 1
+    path: Assets/Scenes/Lake.unity
+    guid: b2f6bb128d147ea4289fc72cff774360
+  - enabled: 1
+    path: Assets/Scenes/NewFarm.unity
+    guid: 0a8146e7718033b438df165a9014395f
+  - enabled: 1
+    path: Assets/Field.unity
+    guid: 99c61c6339708ea49857810e42cd0bd2
   m_configObjects: {}
