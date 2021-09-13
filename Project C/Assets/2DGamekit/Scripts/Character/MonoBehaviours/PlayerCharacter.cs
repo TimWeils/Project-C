@@ -114,6 +114,8 @@ namespace Gamekit2D
         //used in non alloc version of physic function
         protected ContactPoint2D[] m_ContactsBuffer = new ContactPoint2D[16];
 
+        static public Dictionary<string, int> inventory = new Dictionary<string, int>();
+
         // MonoBehaviour Messages - called by Unity internally.
         void Awake()
         {
@@ -126,6 +128,37 @@ namespace Gamekit2D
             m_InventoryController = GetComponent<InventoryController>();
 
             m_CurrentBulletSpawnPoint = spriteOriginallyFacesLeft ? facingLeftBulletSpawnPoint : facingRightBulletSpawnPoint;
+        }
+
+        void InitializeInventory()
+        {
+            inventory.Add("axe", 0);
+            inventory.Add("pickaxe", 0);
+
+            inventory.Add("apple", 0);
+            inventory.Add("pear", 0);
+            inventory.Add("plum", 0);
+            inventory.Add("corn", 0);
+            inventory.Add("wheat", 0);
+            inventory.Add("berry", 0);
+            inventory.Add("mushroom", 0);
+            inventory.Add("dust", 0);
+            inventory.Add("diamond", 0);
+            inventory.Add("emerald", 0);
+            inventory.Add("ruby", 0);
+            inventory.Add("fish", 0);
+            inventory.Add("pumpkin", 0);
+            inventory.Add("watermelon", 0);
+            inventory.Add("ring", 0);
+            inventory.Add("necklace", 0);
+            inventory.Add("bread", 0);
+            inventory.Add("baguette", 0);
+            inventory.Add("muffin", 0);
+            inventory.Add("pie", 0);
+            inventory.Add("cake", 0);
+            inventory.Add("iceCream", 0);
+            inventory.Add("newspaper", 0);
+            inventory.Add("drink", 0);
         }
 
         void Start()
@@ -156,6 +189,7 @@ namespace Gamekit2D
 
             m_StartingPosition = transform.position;
             m_StartingFacingLeft = GetFacing() < 0.0f;
+            InitializeInventory();
         }
 
         void OnTriggerEnter2D(Collider2D other)
@@ -194,7 +228,26 @@ namespace Gamekit2D
                 }
                 else
                 {
-                    Unpause();
+                    Unpause("UIMenus");
+                }
+            }
+
+            if (PlayerInput.Instance.Tab.Down)
+            {
+                if (!m_InPause)
+                {
+                    if (ScreenFader.IsFading)
+                        return;
+
+                    PlayerInput.Instance.ReleaseControl(false);
+                    PlayerInput.Instance.Tab.GainControl();
+                    m_InPause = true;
+                    Time.timeScale = 0;
+                    UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Inventory", UnityEngine.SceneManagement.LoadSceneMode.Additive);
+                }
+                else
+                {
+                    Unpause("Inventory");
                 }
             }
         }
@@ -208,19 +261,19 @@ namespace Gamekit2D
             UpdateCameraFollowTargetPosition();
         }
 
-        public void Unpause()
+        public void Unpause(string SceneName)
         {
             //if the timescale is already > 0, we 
             if (Time.timeScale > 0)
                 return;
 
-            StartCoroutine(UnpauseCoroutine());
+            StartCoroutine(UnpauseCoroutine(SceneName));
         }
 
-        protected IEnumerator UnpauseCoroutine()
+        protected IEnumerator UnpauseCoroutine(string SceneName)
         {
             Time.timeScale = 1;
-            UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync("UIMenus");
+            UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(SceneName);
             PlayerInput.Instance.GainControl();
             //we have to wait for a fixed update so the pause button state change, otherwise we can get in case were the update
             //of this script happen BEFORE the input is updated, leading to setting the game in pause once again

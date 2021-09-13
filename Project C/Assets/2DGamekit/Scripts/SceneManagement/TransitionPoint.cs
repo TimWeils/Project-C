@@ -15,7 +15,7 @@ namespace Gamekit2D
 
         public enum TransitionWhen
         {
-            ExternalCall, InteractPressed, OnTriggerEnter,
+            ExternalCall, InteractPressed, OnePressed, OnTriggerEnter,
         }
 
     
@@ -83,6 +83,14 @@ namespace Gamekit2D
                 if (PlayerInput.Instance.Interact.Down)
                 {
                     TransitionInternal ();
+                }
+            }
+
+            if (transitionWhen == TransitionWhen.OnePressed)
+            {
+                if (PlayerInput.Instance.One.Down)
+                {
+                    TransitionInternal();
                 }
             }
         }
