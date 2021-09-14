@@ -88,9 +88,9 @@ public class MissileGolem : MonoBehaviour
 
     void OnEnable()
     {
-        if (PlayerCharacter.PlayerInstance != null)
+        if (Gamekit2D.PlayerCharacter.PlayerInstance != null)
         {
-            PlayerCharacter.PlayerInstance.damageable.OnDie.AddListener(PlayerDied);
+            Gamekit2D.PlayerCharacter.PlayerInstance.damageable.OnDie.AddListener(this.PlayerDied);
         }
         originShieldScale = shield.transform.localScale;
         animator = GetComponent<Animator>();
@@ -179,9 +179,9 @@ public class MissileGolem : MonoBehaviour
 
     private void OnDisable()
     {
-        if (PlayerCharacter.PlayerInstance != null)
+        if (Gamekit2D.PlayerCharacter.PlayerInstance != null)
         {
-            PlayerCharacter.PlayerInstance.damageable.OnDie.RemoveListener(PlayerDied);
+            Gamekit2D.PlayerCharacter.PlayerInstance.damageable.OnDie.RemoveListener(this.PlayerDied);
         }
     }
 

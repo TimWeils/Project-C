@@ -17,6 +17,8 @@ namespace Gamekit2D
         public TextMeshProUGUI plum;
         public TextMeshProUGUI corn;
         public TextMeshProUGUI wheat;
+        public TextMeshProUGUI cornFlour;
+        public TextMeshProUGUI wheatFlour;
         public TextMeshProUGUI berry;
         public TextMeshProUGUI mushroom;
         public TextMeshProUGUI dust;
@@ -46,7 +48,7 @@ namespace Gamekit2D
         {
             int count;
 
-            if (PlayerCharacter.inventory.TryGetValue("axe",out count))
+            if (PlayerInventory.inventory.TryGetValue("axe",out count))
             {
                 axe.color = Color.green;
             }
@@ -55,7 +57,7 @@ namespace Gamekit2D
                 axe.color = Color.red;
             }
 
-            if (PlayerCharacter.inventory.TryGetValue("pickaxe", out count))
+            if (PlayerInventory.inventory.TryGetValue("pickaxe", out count))
             {
                 pickaxe.color = Color.green;
             }
@@ -64,7 +66,7 @@ namespace Gamekit2D
                 pickaxe.color = Color.red;
             }
 
-            if (PlayerCharacter.inventory.TryGetValue("rod", out count))
+            if (PlayerInventory.inventory.TryGetValue("rod", out count))
             {
                 rod.color = Color.green;
             }
@@ -73,7 +75,7 @@ namespace Gamekit2D
                 rod.color = Color.red;
             }
 
-            if (PlayerCharacter.inventory.TryGetValue("pan", out count))
+            if (PlayerInventory.inventory.TryGetValue("pan", out count))
             {
                 pan.color = Color.green;
             }
@@ -82,76 +84,82 @@ namespace Gamekit2D
                 pan.color = Color.red;
             }
 
-            PlayerCharacter.inventory.TryGetValue("apple", out count);
+            PlayerInventory.inventory.TryGetValue("apple", out count);
             apple.text = "Apple " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("pear", out count);
+            PlayerInventory.inventory.TryGetValue("pear", out count);
             pear.text = "Pear " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("plum", out count);
+            PlayerInventory.inventory.TryGetValue("plum", out count);
             plum.text = "Plum " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("corn", out count);
+            PlayerInventory.inventory.TryGetValue("corn", out count);
             corn.text = "Corn " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("wheat", out count);
+            PlayerInventory.inventory.TryGetValue("wheat", out count);
             wheat.text = "Wheat " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("berry", out count);
+            PlayerInventory.inventory.TryGetValue("cornFlour", out count);
+            cornFlour.text = "Corn Flour " + count + "x";
+
+            PlayerInventory.inventory.TryGetValue("wheatFlour", out count);
+            wheatFlour.text = "Wheat Flour " + count + "x";
+
+            PlayerInventory.inventory.TryGetValue("berry", out count);
             berry.text = "Berry " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("mushroom", out count);
+            PlayerInventory.inventory.TryGetValue("mushroom", out count);
             mushroom.text = "Mushroom " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("dust", out count);
-            dust.text = "Golden dust " + count + "x";
+            PlayerInventory.inventory.TryGetValue("dust", out count);
+            dust.text = "Golden Dust " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("diamond", out count);
+            PlayerInventory.inventory.TryGetValue("diamond", out count);
             diamond.text = "Diamond " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("emerald", out count);
+            PlayerInventory.inventory.TryGetValue("emerald", out count);
             emerald.text = "Emerald " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("ruby", out count);
+            PlayerInventory.inventory.TryGetValue("ruby", out count);
             ruby.text = "Ruby " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("fish", out count);
+            PlayerInventory.inventory.TryGetValue("fish", out count);
             fish.text = "Fish " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("pumpkin", out count);
+            PlayerInventory.inventory.TryGetValue("pumpkin", out count);
             pumpkin.text = "Pumpkin " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("watermelon", out count);
+            PlayerInventory.inventory.TryGetValue("watermelon", out count);
             watermelon.text = "Watermelon " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("ring", out count);
+            PlayerInventory.inventory.TryGetValue("ring", out count);
             ring.text = "Ring " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("necklace", out count);
+            PlayerInventory.inventory.TryGetValue("necklace", out count);
             necklace.text = "Necklace " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("bread", out count);
+            PlayerInventory.inventory.TryGetValue("bread", out count);
             bread.text = "Bread " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("baguette", out count);
+            PlayerInventory.inventory.TryGetValue("baguette", out count);
             baguette.text = "Baguette " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("muffin", out count);
+            PlayerInventory.inventory.TryGetValue("muffin", out count);
             muffin.text = "Muffin " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("pie", out count);
+            PlayerInventory.inventory.TryGetValue("pie", out count);
             pie.text = "Pie " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("cake", out count);
+            PlayerInventory.inventory.TryGetValue("cake", out count);
             cake.text = "Cake " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("iceCream", out count);
+            PlayerInventory.inventory.TryGetValue("iceCream", out count);
             iceCream.text = "Ice Cream " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("newspaper", out count);
+            PlayerInventory.inventory.TryGetValue("newspaper", out count);
             newspaper.text = "Newspaper " + count + "x";
 
-            PlayerCharacter.inventory.TryGetValue("drink", out count);
+            PlayerInventory.inventory.TryGetValue("drink", out count);
             drink.text = "Drink " + count + "x";
         }
     }

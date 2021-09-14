@@ -22,7 +22,7 @@ namespace Gamekit2D
                 {
                     texture.SetActive(false);
                     infoText.SetActive(false);
-                    PlayerCharacter.inventory[type]++;
+                    PlayerInventory.inventory[type]++;
                     spawned = false;
                     timeToRespawn = Random.Range(1, 5);
                 }

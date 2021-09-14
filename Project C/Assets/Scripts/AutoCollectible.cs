@@ -35,7 +35,7 @@ namespace Gamekit2D
                 if (spawned)
                 {
                     texture.SetActive(false);
-                    PlayerCharacter.inventory[type]++;
+                    PlayerInventory.inventory[type]++;
                     spawned = false;
                     timeToRespawn = Random.Range(1, 5);
                 }

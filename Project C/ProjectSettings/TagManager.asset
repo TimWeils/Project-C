@@ -46,6 +46,9 @@ TagManager:
   - name: Architecture
     uniqueID: 375997259
     locked: 0
+  - name: Rain
+    uniqueID: 109247533
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
