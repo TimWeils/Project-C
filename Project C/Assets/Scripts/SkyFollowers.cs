@@ -36,7 +36,7 @@ namespace Gamekit2D
 
         private void SwitchFollower()
         {
-            if (GameTime.IsDay)
+            if (GameTime.isDay)
             {
                 moon.SetActive(false);
 

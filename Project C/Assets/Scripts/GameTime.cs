@@ -9,7 +9,7 @@ namespace Gamekit2D
     {
         static public double hours;
         static public double minutes;
-        static public bool IsDay = true;
+        static public bool isDay = true;
 
         static private double time = 2260;
 
@@ -22,11 +22,11 @@ namespace Gamekit2D
 
             if (hours >= 6 && hours <= 19)
             {
-                IsDay = true;
+                isDay = true;
             }
             else
             {
-                IsDay = false;
+                isDay = false;
             }
         }
     }

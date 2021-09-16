@@ -29,7 +29,7 @@ namespace Gamekit2D
 
         private void SwitchBackgroud()
         {
-            if (GameTime.IsDay)
+            if (GameTime.isDay)
             {
                 nightSky.SetActive(false);
                 night.SetActive(false);
