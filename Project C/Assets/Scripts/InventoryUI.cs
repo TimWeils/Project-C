@@ -38,6 +38,8 @@ namespace Gamekit2D
         public TextMeshProUGUI iceCream;
         public TextMeshProUGUI newspaper;
         public TextMeshProUGUI drink;
+        public TextMeshProUGUI milk;
+        public TextMeshProUGUI chocolate;
 
         public void ExitPause()
         {
@@ -161,6 +163,12 @@ namespace Gamekit2D
 
             PlayerInventory.inventory.TryGetValue("drink", out count);
             drink.text = "Drink " + count + "x";
+
+            PlayerInventory.inventory.TryGetValue("milk", out count);
+            drink.text = "Milk " + count + "x";
+
+            PlayerInventory.inventory.TryGetValue("chocolate", out count);
+            drink.text = "Chocolate " + count + "x";
         }
     }
 }

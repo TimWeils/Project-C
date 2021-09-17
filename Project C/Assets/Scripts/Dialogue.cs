@@ -34,6 +34,18 @@ namespace Gamekit2D
 
         protected int dialogueStage = 0;
 
+        protected bool DetectKey(string key)
+        {
+            if (playerIsHere && Input.GetKeyDown(key))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         protected void DeactivateOptions(int count)
         {
             switch (count)
@@ -73,13 +85,13 @@ namespace Gamekit2D
                             case 1:
                                 {
                                     option1_2Object.SetActive(true);
-                                    option1_2.text = (text);
+                                    option1_2.text = ("1. " + text);
                                     break;
                                 }
                             case 2:
                                 {
                                     option2_2Object.SetActive(true);
-                                    option2_2.text = (text);
+                                    option2_2.text = ("2. " + text);
                                     break;
                                 }
                         }
@@ -92,25 +104,25 @@ namespace Gamekit2D
                             case 1:
                                 {
                                     option1_4Object.SetActive(true);
-                                    option1_4.text = (text);
+                                    option1_4.text = ("1. " + text);
                                     break;
                                 }
                             case 2:
                                 {
                                     option2_4Object.SetActive(true);
-                                    option2_4.text = (text);
+                                    option2_4.text = ("2. " + text);
                                     break;
                                 }
                             case 3:
                                 {
                                     option3_4Object.SetActive(true);
-                                    option3_4.text = (text);
+                                    option3_4.text = ("3. " + text);
                                     break;
                                 }
                             case 4:
                                 {
                                     option4_4Object.SetActive(true);
-                                    option4_4.text = (text);
+                                    option4_4.text = ("4. " + text);
                                     break;
                                 }
                         }

@@ -29,7 +29,7 @@ namespace Gamekit2D
             inventory.Add("fish", 0);
             inventory.Add("pumpkin", 0);
             inventory.Add("watermelon", 0);
-            inventory.Add("ring", 0);
+            inventory.Add("ring", 1);
             inventory.Add("necklace", 0);
             inventory.Add("bread", 0);
             inventory.Add("baguette", 0);
@@ -39,6 +39,8 @@ namespace Gamekit2D
             inventory.Add("iceCream", 0);
             inventory.Add("newspaper", 0);
             inventory.Add("drink", 0);
+            inventory.Add("milk", 0);
+            inventory.Add("chocolate", 0);
         }
 
         // Start is called before the first frame update
