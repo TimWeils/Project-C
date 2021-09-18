@@ -26,7 +26,7 @@ namespace Gamekit2D
         private void Rain()
         {
             int random = Random.Range(0, 100000);
-            if (random < 5)
+            if (random > 99995)
             {
                 IsRaining = true;
                 rainGenerator.SetActive(true);

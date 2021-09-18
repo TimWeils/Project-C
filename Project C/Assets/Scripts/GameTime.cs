@@ -11,7 +11,7 @@ namespace Gamekit2D
         static public double minutes;
         static public bool isDay = true;
 
-        static private double time = 2260;
+        static private double time = 2380;
 
         // Update is called once per frame
         void Update()

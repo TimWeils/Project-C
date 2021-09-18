@@ -16,7 +16,7 @@ namespace Gamekit2D
                         {
                             talkText.SetActive(false);
                             dialogueStage = 1;
-                            controller.ActivateCanvasWithText("Welcome to XXX! My name is Kevin and I'm the mayor of this town. Would you like to know something about town and its surroundings?");
+                            controller.ActivateCanvasWithText("Welcome to Boudiff! My name is Kevin and I'm the mayor of this town. Would you like to know something about it and its surroundings?");
                             SetOptionText(1, 2, "Yes, please.");
                             SetOptionText(2, 2, "Maybe later. Bye!");
                         }
@@ -27,9 +27,9 @@ namespace Gamekit2D
                         if (DetectKey("1"))
                         {
                             dialogueStage = 2;
-                            mainText.text = "Town is at least 500 years old. Its history is peacefull and so is the present. You can find multiple shops in there and all villager are kind and friendly. Should I continue with the talk about surroundings?";
+                            mainText.text = "Town is at least 500 years old. Its landmark is this town hall. You can find multiple shops in there and all villager are kind and friendly. Should I continue with the talk about surroundings?";
                             SetOptionText(1, 2, "Absolutely. I want to know more.");
-                            SetOptionText(2, 2, "I thik that's enough information for now. See ya!");
+                            SetOptionText(2, 2, "I think that's enough information for now. See ya!");
                         }
                         if (DetectKey("2"))
                         {

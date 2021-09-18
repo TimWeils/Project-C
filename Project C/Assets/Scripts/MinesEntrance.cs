@@ -10,6 +10,15 @@ namespace Gamekit2D
         public DialogueCanvasController controller;
 
         private bool playerIsHere;
+        private static bool isDestroyed = false;
+
+        private void Start()
+        {
+            if (isDestroyed)
+            {
+                gameObject.SetActive(false);
+            }
+        }
 
         // Update is called once per frame
         void Update()
@@ -22,6 +31,7 @@ namespace Gamekit2D
             if (playerIsHere && Input.GetKeyDown("e") && PlayerInventory.inventory.ContainsKey("axe"))
             {
                 gameObject.SetActive(false);
+                isDestroyed = true;
             }
         }
 

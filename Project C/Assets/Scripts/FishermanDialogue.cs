@@ -37,7 +37,7 @@ namespace Gamekit2D
                         {
                             dialogueStage = 8;
                             mainText.text = "Yes, I live here. The long way to town is compensated by the fresh air and this beeautiful lake with the island in the middle.";
-                            SetOptionText(1, 2, "There is an island!?");
+                            SetOptionText(1, 2, "There is an island?!");
                             SetOptionText(2, 2, "Yeah. Thanks for the talk.");
                         }
                         break;
@@ -98,7 +98,7 @@ namespace Gamekit2D
                                 dialogueStage = 7;
                                 SetOptionText(1, 2, "Sure. I will bring you the pretiest one I found.");
                             }
-                            SetOptionText(2, 2, "Ring for the fishing rod!? Are you nuts?");
+                            SetOptionText(2, 2, "Ring for the fishing rod?! Are you nuts?");
                         }
                         if (DetectKey("2"))
                         {

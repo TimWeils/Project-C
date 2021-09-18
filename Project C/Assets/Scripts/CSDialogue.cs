@@ -122,6 +122,7 @@ namespace Gamekit2D
                         {
                             dialogueStage = 3;
                             mainText.text = "Here it is! Chocolate muffin. Nice and warm.";
+                            option2_2Object.SetActive(false);
                             SetOptionText(1, 2, "Nice. Just what I wanted.");
                             PlayerInventory.inventory["cornFlour"] -= 2;
                             PlayerInventory.inventory["chocolate"] -= 5;
@@ -139,6 +140,7 @@ namespace Gamekit2D
                         {
                             dialogueStage = 3;
                             mainText.text = "Here it is! Fruit pie. Nice and warm.";
+                            option2_2Object.SetActive(false);
                             SetOptionText(1, 2, "Nice. Just what I wanted.");
                             PlayerInventory.inventory["wheatFlour"] -= 3;
                             PlayerInventory.inventory["apple"] -= 5;
@@ -158,6 +160,7 @@ namespace Gamekit2D
                         {
                             dialogueStage = 3;
                             mainText.text = "Here it is! Chocolate cake with berries. Nice and fresh.";
+                            option2_2Object.SetActive(false);
                             SetOptionText(1, 2, "Nice. Just what I wanted.");
                             PlayerInventory.inventory["wheatFlour"] -= 4;
                             PlayerInventory.inventory["berry"] -= 10;
@@ -176,6 +179,7 @@ namespace Gamekit2D
                         {
                             dialogueStage = 3;
                             mainText.text = "Here it is! Watermelon ice cream. Nice and cool.";
+                            option2_2Object.SetActive(false);
                             SetOptionText(1, 2, "Nice. Just what I wanted.");
                             PlayerInventory.inventory["watermelon"] -= 2;
                             PlayerInventory.inventory["milk"]--;

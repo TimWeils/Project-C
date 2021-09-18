@@ -85,7 +85,7 @@ namespace Gamekit2D
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.gameObject.CompareTag("PlayerTag"))
+            if (other.gameObject.CompareTag("PlayerTag") && PlayerInventory.inventory.ContainsKey("pan"))
             {
                 playerIsHere = true;
                 playerLeft = false;
