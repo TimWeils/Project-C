@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1036187108131694, guid: 28fdaedf686cb394ba208418f1942254, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1409386700996772, guid: 28fdaedf686cb394ba208418f1942254, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -259,6 +263,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114476472205700610, guid: 28fdaedf686cb394ba208418f1942254,
         type: 3}
+      propertyPath: m_text
+      value: 'A - Move Left
+
+        D - Move Right
+
+        W - Look Up
+
+        S
+        - Look Down
+
+        Space - Jump
+
+        E - Interact
+
+        Tab - Inventory
+
+        1
+        - 4 - Dialogue Options
+
+        Esc - Pause Menu'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114476472205700610, guid: 28fdaedf686cb394ba208418f1942254,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 28.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 114476472205700610, guid: 28fdaedf686cb394ba208418f1942254,
+        type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 114476472205700610, guid: 28fdaedf686cb394ba208418f1942254,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 114476472205700610, guid: 28fdaedf686cb394ba208418f1942254,
+        type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
@@ -366,6 +408,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114860965058218842, guid: 28fdaedf686cb394ba208418f1942254,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114909145059062880, guid: 28fdaedf686cb394ba208418f1942254,
         type: 3}
@@ -545,12 +592,12 @@ PrefabInstance:
     - target: {fileID: 224402909453426660, guid: 28fdaedf686cb394ba208418f1942254,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.9999999
       objectReference: {fileID: 0}
     - target: {fileID: 224402909453426660, guid: 28fdaedf686cb394ba208418f1942254,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.3333333
+      value: 0.33333322
       objectReference: {fileID: 0}
     - target: {fileID: 224522528178487832, guid: 28fdaedf686cb394ba208418f1942254,
         type: 3}

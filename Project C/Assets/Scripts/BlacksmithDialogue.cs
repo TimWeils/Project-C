@@ -87,6 +87,8 @@ namespace Gamekit2D
                         {
                             dialogueStage = 3;
                             mainText.text = "Here is your tool. I hope it will last long.";
+                            option2_2Object.SetActive(false);
+                            SetOptionText(1, 2, "It looks marvelous. Thank you.");
                             PlayerInventory.inventory["bread"]--;
                             PlayerInventory.inventory["baguette"]--;
                             PlayerInventory.inventory["drink"]--;
@@ -107,6 +109,8 @@ namespace Gamekit2D
                         {
                             dialogueStage = 3;
                             mainText.text = "Here is your tool. I hope it will last long.";
+                            option2_2Object.SetActive(false);
+                            SetOptionText(1, 2, "It looks marvelous. Thank you.");
                             PlayerInventory.inventory["iceCream"]--;
                             PlayerInventory.inventory["drink"]--;
                             if (!PlayerInventory.inventory.ContainsKey("pickaxe"))

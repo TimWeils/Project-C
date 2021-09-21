@@ -76,7 +76,7 @@ namespace Gamekit2D
                         if (DetectKey("1"))
                         {
                             dialogueStage = 4;
-                            mainText.text = "Here's your bread m'lady and thanks for the shrooms";
+                            mainText.text = "Here's your bread m'lady and thanks for the shrooms.";
                             option2_2Object.SetActive(false);
                             SetOptionText(1, 2, "Thank you!");
                             PlayerInventory.inventory["wheatFlour"] -= 10;
@@ -105,7 +105,7 @@ namespace Gamekit2D
                         if (DetectKey("1"))
                         {
                             dialogueStage = 4;
-                            mainText.text = "Here's your baguette m'lady and thanks for the shrooms";
+                            mainText.text = "Here's your baguette m'lady and thanks for the shrooms.";
                             option2_2Object.SetActive(false);
                             SetOptionText(1, 2, "Thank you!");
                             PlayerInventory.inventory["wheatFlour"] -= 5;

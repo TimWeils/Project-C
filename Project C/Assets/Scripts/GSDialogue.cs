@@ -40,7 +40,7 @@ namespace Gamekit2D
                             {
                                 dialogueStage = 11;
                                 mainText.text = "Ohhh! What a shiny necklace. I WANT IT!!!";
-                                SetOptionText(1, 2, "What can you offer for it?");
+                                SetOptionText(1, 2, "What?!");
                                 SetOptionText(2, 2, "No! It's mine.");
                             }
                             else
@@ -65,7 +65,7 @@ namespace Gamekit2D
                         if (DetectKey("1"))
                         {
                             dialogueStage = 3;
-                            mainText.text = "Oh! I see. The offer is not good. Well then I will give you 2 apples";
+                            mainText.text = "Oh! I see. The offer is not good. Well then I will give you 2 apples.";
                             SetOptionText(1, 2, "That's still not worth it.");
                         }
                         break;
@@ -97,7 +97,7 @@ namespace Gamekit2D
                             dialogueStage = 1;
                             mainText.text = "Thank you! It looks beautiful. Now you can check out my other deals. Currently I'm selling these things for pumpkins because I'm creating a pumpkin collection.";
                             SetOptionText(1, 2, "Oh. Ok, show me.");
-                            SetOptionText(2, 2, "Sorry but no. Maybe next time.");
+                            SetOptionText(2, 2, "Maybe next time.");
                             firstNecklace = false;
                             PlayerInventory.inventory["necklace"]--;
 
@@ -258,7 +258,7 @@ namespace Gamekit2D
                         {
                             dialogueStage = 12;
                             mainText.text = "It's so S H I N Y! I need it. You can have my entire pumpkin collection.";
-                            SetOptionText(1,2,"Fine if you insist.");
+                            SetOptionText(1,2,"Ummm... Ok.");
                             SetOptionText(2, 2, "No way!");
                         }
                         if (DetectKey("2"))
@@ -273,6 +273,7 @@ namespace Gamekit2D
                         {
                             dialogueStage = 5;
                             mainText.text = "Thank you! You are the best person I ever met!";
+                            option2_2Object.SetActive(false);
                             SetOptionText(1, 2, "I'm happy when you are happy.");
                             PlayerInventory.inventory["necklace"]--;
                             PlayerInventory.inventory["pumpkin"] += pumpkins;

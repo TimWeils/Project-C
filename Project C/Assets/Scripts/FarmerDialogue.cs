@@ -29,8 +29,8 @@ namespace Gamekit2D
                         {
                             dialogueStage = 2;
                             mainText.text = "Yes. When I was young I wanted to become rich. I sneaked into the old mines and panned under the waterfalls. Unfortunately I was out of luck.";
-                            SetOptionText(1, 4, "Sneaked into mines?");
-                            SetOptionText(2, 4, "Panned under waterfalls?");
+                            SetOptionText(1, 2, "Sneaked into mines?");
+                            SetOptionText(2, 2, "Panned under waterfalls?");
                         }
                         if (DetectKey("2"))
                         {
@@ -52,7 +52,7 @@ namespace Gamekit2D
                             else
                             {
                                 dialogueStage = 4;
-                                SetOptionText(2, 2, "No, unfortunately.");
+                                SetOptionText(1, 2, "No, unfortunately.");
                             }
                         }
                         if (DetectKey("2"))
@@ -69,7 +69,7 @@ namespace Gamekit2D
                         if (DetectKey("1"))
                         {
                             dialogueStage = 4;
-                            mainText.text = "Thanks. Now about the mines. It was easy to get in. Just take an axe and break through the closed entrance. But then you enter a huge maze of underground tunnels. I think you need a bit of luck to find something here. Unfortunately I was not the lucky one.";
+                            mainText.text = "Thanks. Now about the mines. It's easy to get in. Just take an axe and break through the closed entrance. But then you enter a huge maze of underground tunnels. I think you need a bit of luck to find something here. Unfortunately I was not the lucky one.";
                             SetOptionText(1, 2, "Thanks for the story. I will definitely try my luck there too.");
                         }
                         break;
@@ -102,7 +102,7 @@ namespace Gamekit2D
                         if (DetectKey("1"))
                         {
                             dialogueStage = 4;
-                            mainText.text = "Perfect!. So now just go under the water and start panning. But dont swirl with the pan too much. Manipulate with it gently and results will come. And by results I mean gold.";
+                            mainText.text = "Perfect! So now just go into the water and start panning. But don't swirl with the pan too much. Manipulate with it gently and results will come your way. And by results I mean gold.";
                             option2_2Object.SetActive(false);
                             SetOptionText(1, 2, "Ok, I think I'm ready. Bye!");
                         }

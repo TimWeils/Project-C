@@ -10,9 +10,6 @@ namespace Gamekit2D
 
         void InitializeInventory()
         {
-            inventory.Add("axe", 0);
-            inventory.Add("pickaxe", 0);
-
             inventory.Add("apple", 0);
             inventory.Add("pear", 0);
             inventory.Add("plum", 0);
@@ -29,7 +26,7 @@ namespace Gamekit2D
             inventory.Add("fish", 0);
             inventory.Add("pumpkin", 0);
             inventory.Add("watermelon", 0);
-            inventory.Add("ring", 1);
+            inventory.Add("ring", 0);
             inventory.Add("necklace", 0);
             inventory.Add("bread", 0);
             inventory.Add("baguette", 0);

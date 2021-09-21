@@ -14252,15 +14252,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1584190494545058872, guid: a827fc19bb7c01f41a5069deaae54c4d,
         type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584190494545058872, guid: a827fc19bb7c01f41a5069deaae54c4d,
+        type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+      objectReference: {fileID: 11400000, guid: 4c1f115f2c9b80b4cabb22cae230db1c,
         type: 2}
+    - target: {fileID: 1584190494545058872, guid: a827fc19bb7c01f41a5069deaae54c4d,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1584190494545058872, guid: a827fc19bb7c01f41a5069deaae54c4d,
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 21498813622556604, guid: 4c1f115f2c9b80b4cabb22cae230db1c,
+        type: 2}
+    - target: {fileID: 1584190494545058872, guid: a827fc19bb7c01f41a5069deaae54c4d,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a827fc19bb7c01f41a5069deaae54c4d, type: 3}
 --- !u!224 &2041438074 stripped
@@ -14776,6 +14792,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TalkText
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837999453470935731, guid: 57ae90bbfa0c59e409b5cbe87fb6e897,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837999453470935731, guid: 57ae90bbfa0c59e409b5cbe87fb6e897,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57ae90bbfa0c59e409b5cbe87fb6e897, type: 3}

@@ -40,7 +40,7 @@ namespace Gamekit2D
             {
                 moon.SetActive(false);
 
-                if (RainSwitch.IsRaining)
+                if (RainSwitch.isRaining)
                 {
                     cloud01.SetActive(true);
                     cloud02.SetActive(true);
@@ -57,7 +57,7 @@ namespace Gamekit2D
             {
                 sun.SetActive(false);
 
-                if (RainSwitch.IsRaining)
+                if (RainSwitch.isRaining)
                 {
                     cloud01.SetActive(true);
                     cloud02.SetActive(true);

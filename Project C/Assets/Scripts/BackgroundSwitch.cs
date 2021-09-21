@@ -34,7 +34,7 @@ namespace Gamekit2D
                 nightSky.SetActive(false);
                 night.SetActive(false);
 
-                if (RainSwitch.IsRaining)
+                if (RainSwitch.isRaining)
                 {
                     rainSky.SetActive(true);
                     rain.SetActive(true);

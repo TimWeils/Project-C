@@ -4,11 +4,12 @@ using UnityEngine;
 
 namespace Gamekit2D
 {
-    public class Collectible : MonoBehaviour
+    public class GemCollectible : MonoBehaviour
     {
         public GameObject infoText;
         public GameObject texture;
         public string type;
+        public DialogueCanvasController controller;
 
         private bool spawned = false;
         private bool playerIsHere = false;
@@ -18,7 +19,13 @@ namespace Gamekit2D
         {
             if (spawned)
             {
-                if (playerIsHere && PlayerInput.Instance.Interact.Down)
+                if (playerIsHere && PlayerInput.Instance.Interact.Down && !PlayerInventory.inventory.ContainsKey("pickaxe"))
+                {
+                    infoText.SetActive(false);
+                    controller.ActivateCanvasWithText("I can't dig it up without a pickaxe.");
+                }
+
+                if (playerIsHere && PlayerInput.Instance.Interact.Down && PlayerInventory.inventory.ContainsKey("pickaxe"))
                 {
                     texture.SetActive(false);
                     infoText.SetActive(false);
@@ -70,6 +77,7 @@ namespace Gamekit2D
             {
                 infoText.SetActive(false);
                 playerIsHere = false;
+                controller.DeactivateCanvasWithDelay(0);
             }
         }
     }

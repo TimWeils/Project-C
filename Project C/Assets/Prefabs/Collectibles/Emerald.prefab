@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8396992480850345502}
   - component: {fileID: 8396992480850345496}
-  - component: {fileID: 8396992480850345503}
+  - component: {fileID: 3576598834309838544}
   m_Layer: 0
   m_Name: Emerald
   m_TagString: Untagged
@@ -59,7 +59,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8396992480850345503
+--- !u!114 &3576598834309838544
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,12 +68,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8396992480850345501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9277531ac668a54fa1434fe16d96297, type: 3}
+  m_Script: {fileID: 11500000, guid: 3116b88b7c9ef524f93f44b93b192dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   infoText: {fileID: 0}
   texture: {fileID: 8396992482359033757}
   type: emerald
+  controller: {fileID: 0}
 --- !u!1 &8396992482359033757
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,14 +6,14 @@ namespace Gamekit2D
 {
     public class RainSwitch : MonoBehaviour
     {
-        public static bool IsRaining = false;
+        public static bool isRaining = false;
 
         public GameObject rainGenerator;
 
         // Start is called before the first frame update
         void Start()
         {
-            IsRaining = false;
+            isRaining = false;
             Rain();
         }
 
@@ -25,10 +25,10 @@ namespace Gamekit2D
 
         private void Rain()
         {
-            int random = Random.Range(0, 100000);
-            if (random > 99995)
+            int random = Random.Range(0, 1000000);
+            if (random > 999997)
             {
-                IsRaining = true;
+                isRaining = true;
                 rainGenerator.SetActive(true);
             }
         }

@@ -165,10 +165,10 @@ namespace Gamekit2D
             drink.text = "Drink " + count + "x";
 
             PlayerInventory.inventory.TryGetValue("milk", out count);
-            drink.text = "Milk " + count + "x";
+            milk.text = "Milk " + count + "x";
 
             PlayerInventory.inventory.TryGetValue("chocolate", out count);
-            drink.text = "Chocolate " + count + "x";
+            chocolate.text = "Chocolate " + count + "x";
         }
     }
 }

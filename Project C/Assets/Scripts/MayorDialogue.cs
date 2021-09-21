@@ -42,7 +42,7 @@ namespace Gamekit2D
                         if (DetectKey("1"))
                         {
                             dialogueStage = 3;
-                            mainText.text = "At the west there is a forest. On its end are old mines, which are closed now. To the east are fields and orchard. And after that there is a big beautiful lake Uto. I hope that you enjoyed this little history course.";
+                            mainText.text = "At the west there is a forest. On its end are old mines, which are closed now. To the east are fields and orchard. And after that there is a big beautiful lake Uto. I hope that you enjoyed this little lecture.";
                             option2_2Object.SetActive(false);
                             SetOptionText(1, 2, "Yes. It was very informative.");
                         }
